@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="./access/style.css" />
     <title>Ōkido's Pokémon Research Institute</title>
   </head>
-  <body>
+  <div>
     <!-- Nav Bar-->
     <nav class="navBar">nav bar</nav>
     <!-- body-top -->
-    <form>
-      <div class="form-group">
+    <form class="form-container">
+      <div>
         <input
           type="text"
           class="form-control"
@@ -24,12 +24,43 @@
       </button>
     </form>
     <!--body- middle - Left - Against Strong && body- middle - Right - Against Weak-->
-    <div>
+    <div class="main-container">
       <div id="body-main-pokemon"></div>
-      <div class="body-middle">
-        <div class="body-middle left">Stong Against</div>
-
-        <div class="body-middle right">Strong Right</div>
+      <div class="body-middle-containerwrap">
+        <div class="body-middle-left-container">
+          <div class="opponent-item-container">
+            <div id= item1-left-picture></div>
+            <div id= item1-left-name></div>
+            <div id= item1-left-type></div>
+          </div>
+          <div class="opponent-item-container">
+            <div id= item2-left-picture></div>
+            <div id= item2-left-name></div>
+            <div id= item2-left-type></div>
+          </div>
+          <div class="opponent-item-container">
+            <div id= item3-left-picture></div>
+            <div id= item3-left-name></div>
+            <div id= item3-left-type></div>
+          </div>
+        </div>
+        <div class="body-middle-right-container">
+          <div class="opponent-item-container">
+            <div id= item1-right-picture></div>
+            <div id= item1-right-name></div>
+            <div id= item1-right-type></div>
+          </div>
+          <div class="opponent-item-container">
+            <div id= item2-right-picture></div>
+            <div id= item2-right-name></div>
+            <div id= item2-right-type></div>
+          </div>
+          <div class="opponent-item-container">
+            <div id= item3-right-picture></div>
+            <div id= item3-right-name></div>
+            <div id= item3-right-type></div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- footer -->

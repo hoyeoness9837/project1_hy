@@ -22,12 +22,10 @@ document.getElementById('searchPokemon').addEventListener('click', (event) => {
     </h5>
     <ul class="main-card-list">
         <li class="main-card-list-item-type">
-            type: ${pokemon.types.map((type) => type.type.name).join(', ')}
+            Type: ${pokemon.types.map((type) => type.type.name).join(', ')}
         </li>
-        <li class="main-card-list-item-ability0">
-            ${pokemon.abilities[0].ability.name}
-        </li>
-        <li class="main-card-list-item-ability1">
+        <li class="main-card-list-item-ability">
+            Abilities: ${pokemon.abilities[0].ability.name},
             ${pokemon.abilities[1].ability.name}
         </li>
         <li class="main-card-list-item-stats0">
@@ -57,7 +55,7 @@ document.getElementById('searchPokemon').addEventListener('click', (event) => {
       })
       .catch((e) => {
         console.log(e);
-        alert('Pokemon not found');
+        //removed the alert due to the requirement.
         document.getElementById('nameInput').value = '';
         document.getElementById('body-main-pokemon').innerHTML = '';
       });
