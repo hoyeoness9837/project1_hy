@@ -17,15 +17,15 @@ document.getElementById('searchPokemon').addEventListener('click', (event) => {
     class="main-card-img" 
     alt="${pokemon.name}">
   <div class="main-card-body">
-    <h5 class="main-card-title">
+    <h2 class="main-card-title">
       ${pokemon.name}
-    </h5>
-    <ul class="main-card-list">
+    </h2>
+    <div class="main-card-list">
         <li class="main-card-list-item-type">
-            Type: ${pokemon.types.map((type) => type.type.name).join(', ')}
+            type: ${pokemon.types.map((type) => type.type.name).join(', ')}
         </li>
         <li class="main-card-list-item-ability">
-            Abilities: ${pokemon.abilities[0].ability.name},
+            abilities: ${pokemon.abilities[0].ability.name},
             ${pokemon.abilities[1].ability.name}
         </li>
         <li class="main-card-list-item-stats0">
@@ -46,7 +46,7 @@ document.getElementById('searchPokemon').addEventListener('click', (event) => {
         <li class="main-card-list-item-stats6">
             ${pokemon.stats[5].stat.name}: ${pokemon.stats[5].base_stat}
         </li>
-    </ul>
+    </div>
   </div>
 `;
         document.getElementById('nameInput').value = '';
