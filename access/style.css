@@ -4,9 +4,17 @@ body {
 }
 .navBar {
   border: 1px solid black;
+  font-size: 35px;
+  padding: 10px;
+  text-align: center;
 }
-.form-container{
-    text-align: center;
+
+#logo {
+  width: 5%;
+}
+
+.form-container {
+  text-align: center;
 }
 
 .card {
@@ -20,6 +28,10 @@ body {
   display: flex;
   height: fit-content;
   flex-direction: column;
+}
+
+.main-card-img {
+  width: 20%;
 }
 
 .body-middle-containerwrap {

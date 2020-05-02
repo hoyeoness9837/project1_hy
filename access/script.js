@@ -18,7 +18,7 @@ document.getElementById('searchPokemon').addEventListener('click', (event) => {
     alt="${pokemon.name}">
   <div class="main-card-body">
     <h2 class="main-card-title">
-      ${pokemon.name}
+      ${pokemon.name.toUpperCase()}
     </h2>
     <div class="main-card-list">
         <li class="main-card-list-item-type">
